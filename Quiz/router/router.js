@@ -1,6 +1,8 @@
 const express = require("express")
 const Question = require("../model/QuizModal") // new
 const router = express.Router()
+const cors = require("cors");
+router.use(cors());
 
 
 router.get('/viewquestion',(req,res)=>{
